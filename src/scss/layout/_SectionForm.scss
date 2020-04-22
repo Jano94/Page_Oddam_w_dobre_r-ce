@@ -1,0 +1,41 @@
+.form {
+
+    .name-email {
+      display: flex;
+      width: 100%;
+      .label-text {
+        .input-text {
+          margin: $spacing-main*0.75;
+          padding: $spacing-main*0.1;
+          @include buttons;
+        }
+      }
+    }
+    .input-long-text {
+      @include buttons;
+    }
+  }
+  .submit-button {
+    text-align: center;
+    margin: $spacing-main;
+    padding: $spacing-main*0.5;
+    width: 25%;
+  }
+.label-text {
+  font-size: $font-size;
+  font-family: $font-base;
+  display: flex;
+  flex-direction: column;
+  .input-text {
+    margin: $spacing-main*0.75;
+    padding: $spacing-main*0.1;
+    border-bottom: $border-main;
+  @include buttons;
+  }
+}
+.error {
+  color: red;
+  width: 100%;
+  font-size: 0.8rem;
+  margin: $spacing-main*0.5;
+}

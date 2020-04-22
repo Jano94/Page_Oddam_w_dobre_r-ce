@@ -9,3 +9,24 @@
     @content;
   }
 }
+@mixin buttons {
+  box-shadow: 0 0 0 transparent;
+  border: 0 solid transparent;
+  text-shadow: 0 0 0 transparent;
+  color: $color-font-login;
+  background: $color-main-article;
+}
+@mixin links {
+  color: $color-font-login;
+  font-family: $font-base;
+  text-decoration: none;
+    &:hover {
+      color: $color-font-login;
+    }
+}
+@mixin heading2 {
+  font-family: $font-base;
+  font-size: $font-size*2;
+  color: $color-font
+}
+

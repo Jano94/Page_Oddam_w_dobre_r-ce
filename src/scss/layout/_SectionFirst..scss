@@ -1,0 +1,40 @@
+ .mainIMG {
+   width: 100%;
+   height: 100%;
+  }
+.article-main {
+    margin-top: $spacing-main*5;
+    display: flex;
+    justify-content: center;
+
+.article {
+  font-size: $font-size*2;
+  text-align: center;
+
+  .article-text {
+    @include heading2;
+  }
+
+  .decorationIMG {
+    margin-top: $spacing-main;
+  }
+
+  .article-buttons {
+    display: flex;
+    margin-top: $spacing-main*2;
+
+    .art-button {
+      font-family: $font-base;
+      font-size: $font-size*2;
+      margin: $spacing-main *1.7;
+      width: 50%;
+      @include buttons;
+      border: $border-main;
+
+      .link-primary {
+        @include links;
+      }
+    }
+  }
+}
+}

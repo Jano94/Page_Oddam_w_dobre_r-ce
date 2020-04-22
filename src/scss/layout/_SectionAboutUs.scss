@@ -1,0 +1,24 @@
+.section-about-us {
+  background-color: $color-article;
+
+}
+.article-title {
+  margin: $spacing-main*2 0 $spacing-main;
+  font-size: $font-size*2;
+}
+.decorationIMG {
+  margin-bottom: $spacing-main*1.5;
+}
+.article-text {
+  font-family: $font-base;
+  font-size: $font-size*1.25;
+  padding: 0 $spacing-main*2 0 $spacing-main*2;
+}
+.signature {
+  margin-top: $spacing-main*2;
+  width: 25%;
+  float: right;
+}
+.mainIMG {
+  padding-right: 0;
+}

@@ -1,6 +1,8 @@
 import React from 'react';
-import {HashRouter , Switch , Route} from "react-router-dom/modules/HashRouter";
-import Home from "./components/home/header";
+import {HashRouter , Switch , Route} from "react-router-dom";
+import Home from "./components/home/home";
+import Login from "./components/login/Login";
+import Register from "./components/register/Register";
 
 
 function App() {
@@ -8,7 +10,9 @@ function App() {
     <>
         <HashRouter>
             <Switch>
-                <Route path="/home" component={Home} />
+                <Route exact path="/" component={Home}/>
+                <Route path ="/login" component={Login}/>
+                <Route path="/register" component={Register}/>
             </Switch>
         </HashRouter>
         </>

@@ -1,0 +1,43 @@
+.nav-primary {
+  display: flex;
+  justify-content: flex-end;
+  margin: $spacing-main*2 $spacing-main $spacing-main;
+  .button-login {
+   @include buttons;
+ .link-primary {
+   @include links;
+ }
+  }
+ .button-register {
+   @include buttons;
+   border: 1px solid $color-login;
+   margin: $spacing-main;
+   .link-primary {
+     @include links
+   }
+ }
+}
+.nav-secondary {
+  margin: $spacing-main;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  .nav-menu {
+    margin: $spacing-main*0.2;
+    color: $color-font;
+    font-size: $font-size*1;
+    padding: $spacing-main * 0.25;
+    list-style: none;
+    box-sizing: border-box;
+    &:hover {
+      border: 1px solid $color-font;
+      box-sizing: border-box;
+    }
+    .link-primary {
+      @include links
+    };
+  }
+  .nav-start {
+    border: 1px solid $color-font;
+  }
+}

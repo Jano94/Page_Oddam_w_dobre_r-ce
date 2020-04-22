@@ -1,0 +1,45 @@
+.login-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin:$spacing-main*4 0 $spacing-main*2 0;
+  .login-head {
+    @include heading2;
+    margin-bottom: $spacing-main;
+  }
+}
+.login-register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-article;
+  .label-text {
+    text-align: start;
+    margin: $spacing-main*1.75;
+
+    .login-text {
+      @include buttons;
+      padding: $spacing-main*0.25;
+      background-color: $color-article;
+      border-bottom: $border-main;
+    }
+  }
+}
+.btn-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  .btn {
+    margin-top: $spacing-main;
+    @include buttons;
+  }
+    .btn-login {
+      border: $border-main;
+      padding: $spacing-main*0.75;
+    }
+}
+.link-primary {
+  @include links;
+}

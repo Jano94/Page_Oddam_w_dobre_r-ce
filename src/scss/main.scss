@@ -1,3 +1,15 @@
 @import "./config/reset";
+@import "./config/variables";
 @import "./settings/fonts";
 @import "./settings/colors";
+@import "./config/mixins";
+@import "./config/grid";
+@import "layout/SectionFirstHeader";
+@import "layout/SectionFirst.";
+@import "layout/SectionSecond";
+@import "layout/SectionWhatAbout";
+@import "layout/SectionAboutUs";
+@import "layout/SectionHelp";
+@import "layout/SectionForm";
+@import "layout/SectionFooter";
+@import "layout/Login";

@@ -1,0 +1,28 @@
+.container {
+
+}
+  .article-yellow {
+    background-image: url("../../assets/3ColumnsBackground.png");
+    width: 100%;
+    height: 100%;
+
+    .article-num {
+      margin-top: $spacing-main*1.5;
+      font-family: $font-base;
+      font-size: $font-size*5;
+      color: $color-font;
+    }
+
+    .article-title {
+      margin-top: $spacing-main*1.5;
+      font-size: $font-size*1.25;
+      letter-spacing: -0.36px;
+    }
+
+    .article-info {
+      margin-top: $spacing-main;
+      padding: $spacing-main*1.25;
+      font-size: $font-size;
+      letter-spacing: -0.32px;
+    }
+  }
