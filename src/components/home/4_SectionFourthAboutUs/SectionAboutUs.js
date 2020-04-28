@@ -8,7 +8,7 @@ const SectionAboutUs = () => {
     return (
         <Element name="articleAboutUS" className="container section-about-us">
             <div className="row">
-                <div className="col-6">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div className="article-wg-box">
                         <h2 className="article-title"> O nas </h2>
                         <img src={decoration} alt="decoration" className="decorationIMG"/>
@@ -17,8 +17,8 @@ const SectionAboutUs = () => {
                         <img src={signature} alt="signature" className="signature"/>
                     </div>
                 </div>
-                <div className="col-6">
-                    <img src={people} alt="happy peoples" className="mainIMG"/>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src={people} alt="happy peoples" className="peopleIMG"/>
                 </div>
 
             </div>

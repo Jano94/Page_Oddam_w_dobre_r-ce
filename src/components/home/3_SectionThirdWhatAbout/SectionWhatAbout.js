@@ -18,24 +18,24 @@ const SectionWhatAbout = () => {
                     <img src={decoration} alt="decoration" className="decorationIMG"/>
                 </div>
                 <article className="row article-what-going">
-                    <div className="col-2"> </div>
-                    <div className="col-2">
+                    <div className="col-xl-2 col-lg-2 col-md-0 col-sm-0 col-0"> </div>
+                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
                 <SectionColWG img={shirt} alt={"t-shirt"} title={"Wybierz rzeczy"}
                               text={"ubrania, zabawki, sprzęt i inne"}/>
                     </div>
-                    <div className="col-2">
+                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
                 <SectionColWG img={box} alt={"package box"} title={"Spakuj je"}
                               text={"skorzystaj z worków na śmieci"}/>
                     </div>
-                    <div className="col-2">
+                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
                 <SectionColWG img={loop} alt={"loop"} title={"Zdecyduj komu chcesz pomóc"}
                               text={"wybierz zaufane miejsce"}/>
                     </div>
-                    <div className="col-2">
+                    <div className="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
                 <SectionColWG img={arrows} alt={"loading arrows"} title={"Zamów kuriera"}
                               text={"kurier przyjedzie w dogodnym terminie"}/>
                     </div>
-                    <div className="col-2"> </div>
+                    <div className="col-xl-2 col-lg-2 col-md-0 col-sm-0 col-0"> </div>
                 </article>
                 <div className="article-buttons">
                     <button className="art-button"><NavLink className="link-primary" to="/login">ODDAJ RZECZY</NavLink></button>

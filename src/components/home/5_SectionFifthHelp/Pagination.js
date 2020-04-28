@@ -1,25 +1,21 @@
-import React from "react";
+import React from 'react';
 
-const Pagination = ({postPerSlide, slides, onPaginate}) => {
-    const numberOfPages = Math.ceil(slides.length / postPerSlide);
-    const pages = [];
-    console.log(numberOfPages)
-    for(let i = 1; i <= numberOfPages; i++) {
-        pages.push(i);
-    }
 
-        return (
-      <nav>
-        <ul className="slide-pagination">
-            {pages.map(numberOfPage => (
-                <li key={numberOfPage} className="slide-item">
-                    <button onClick={()=>onPaginate(numberOfPage)} className="slide-button">
-                        {numberOfPage}
-                    </button>
-                </li>
-            ))}
-        </ul>
-      </nav>
-  )
+export const Pagination = ({itemsPerPage, items, onPaginate}) => {
+    const pageCount = Math.ceil(items.length / itemsPerPage);
+    const pageNumbers = new Array(pageCount).fill(0);
+
+    return (
+        <nav>
+            <ul className="slide-pagination">
+                {pageCount > 1 && pageNumbers.map((x, pageNumber) => (
+                    <li key={pageNumber} className="slide-item">
+                        <button onClick={() => onPaginate(pageNumber + 1)} className="slide-button">
+                            {pageNumber + 1}
+                        </button>
+                    </li>
+                ))}
+            </ul>
+        </nav>
+    );
 };
-export default Pagination;

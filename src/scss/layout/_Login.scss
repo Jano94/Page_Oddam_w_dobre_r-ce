@@ -18,7 +18,7 @@
   .label-text {
     text-align: start;
     margin: $spacing-main*1.75;
-
+    padding: 0 $spacing-main*2 0 $spacing-main*2;
     .login-text {
       @include buttons;
       padding: $spacing-main*0.25;
@@ -28,11 +28,12 @@
   }
 }
 .btn-section {
-  width: 100%;
+  width: 175%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  background-color: $color-main-article;
   .btn {
-    margin-top: $spacing-main;
+    margin: $spacing-main*1.5;
     @include buttons;
   }
     .btn-login {
@@ -42,4 +43,18 @@
 }
 .link-primary {
   @include links;
+}
+@media (min-width: 150px) and (max-width: 576px) {
+  .btn-section {
+    width: 125%;
+  }
+  .login-register-form {
+    .label-text {
+      text-align: center;
+    }
+      margin: $spacing-main;
+      .login-text {
+        padding: 0;
+      }
+  }
 }

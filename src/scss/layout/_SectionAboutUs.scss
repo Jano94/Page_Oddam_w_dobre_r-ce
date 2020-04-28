@@ -1,24 +1,74 @@
 .section-about-us {
   background-color: $color-article;
+  padding: $spacing-main;
+}
+.article-wg-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
+  .article-title {
+    margin: $spacing-main*2 0 $spacing-main;
+    font-size: $font-size*2;
+    text-align: center;
+  }
+
+  .decorationIMG {
+    margin-bottom: $spacing-main*1.5;
+  }
+
+  .article-text {
+    font-family: $font-base;
+    font-size: $font-size*1.25;
+    padding: 0 $spacing-main*2 0 $spacing-main*2;
+  }
+
+  .signature {
+    margin-top: $spacing-main*2;
+    width: 25%;
+    float: right;
+  }
 }
-.article-title {
-  margin: $spacing-main*2 0 $spacing-main;
-  font-size: $font-size*2;
+.peopleIMG{
+  max-width: 100%;
 }
-.decorationIMG {
-  margin-bottom: $spacing-main*1.5;
-}
-.article-text {
-  font-family: $font-base;
-  font-size: $font-size*1.25;
-  padding: 0 $spacing-main*2 0 $spacing-main*2;
-}
-.signature {
-  margin-top: $spacing-main*2;
-  width: 25%;
-  float: right;
-}
-.mainIMG {
-  padding-right: 0;
+@media (min-width: 150px) and (max-width: 768px) {
+  .article-wg-box {
+    .article-title {
+      margin: $spacing-main 0 $spacing-main;
+      font-size: $font-size*1.5;
+    }
+    .article-text {
+      text-align: center;
+      font-size: $font-size;
+      padding: 0 $spacing-main 0 $spacing-main*2;
+    }
+  }
+    .signature {
+      margin-top: $spacing-main;
+      width: 25%;
+      float: right;
+    }
+  }
+@media (min-width: 769px) and (max-width: 992px) {
+  .article-wg-box {
+    .article-title {
+      margin: $spacing-main * 0.5;
+      font-size: $font-size*2;
+    }
+    .decorationIMG {
+      margin-bottom: $spacing-main*0.5;
+    }
+    .article-text {
+      text-align: center;
+      font-size: $font-size*0.9;
+      padding: 0 $spacing-main 0 $spacing-main;
+    }
+    .signature {
+      margin-top: $spacing-main*0.25;
+      float: right;
+    }
+  }
+
 }

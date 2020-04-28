@@ -1,56 +1,56 @@
 const FoundationArray= [
     {
-        title: "Fundacja “Dbam o Zdrowie”",
+        title: "Fundacja “Dbam o Zdrowie” NR 1",
         info: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
         things: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
         ID: 1
     },
     {
-        title: "Fundacja “Dla dzieci”",
+        title: "Fundacja “Dla dzieci” NR 2",
         info: "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
         things: "ubrania, meble, zabawki",
         ID: 2
     },
     {
-        title: "Fundacja “Bez domu”",
+        title: "Fundacja “Bez domu” NR 3",
         info: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
         things: "ubrania, jedzenie, ciepłe koce",
         ID: 3
     },
     {
-        title: "FuSDdDsadQWDmu”",
-        info: "DFedQ",
-        things: "ubrania, jedzenie, ciepłe koce",
+        title: "Fundacja “Dbam o Zdrowie” NR 4",
+        info: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+        things: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
         ID: 4
     },
     {
-        title: "FuASDDadQWD”",
-        info: "Cel i misja:.",
-        things: "ubrania, jedzenie, ciepłe koce",
+        title: "Fundacja “Dla dzieci” NR 5",
+        info: "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+        things: "ubrania, meble, zabawki",
         ID: 5
     },
     {
-        title: "FudfwefEWFwef”",
-        info: "Cel i misja:  zamieszkania.",
-        things: "ubrania, ",
+        title: "Fundacja “Bez domu” NR 6",
+        info: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+        things: "ubrania, jedzenie, ciepłe koce",
         ID: 6
     },
     {
-        title: "FuASDDadQWD”",
-        info: "Cel i misja:.",
-        things: "ubrania, jedzenie, ciepłe koce",
+        title: "Fundacja “Dbam o Zdrowie” NR 7",
+        info: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+        things: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
         ID: 7
     },
     {
-        title: "FudfwefEWFwef”",
-        info: "Cel i misja:  zamieszkania.",
-        things: "ubrania, ",
+        title: "Fundacja “Dla dzieci” NR 8",
+        info: "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+        things: "ubrania, meble, zabawki",
         ID: 8
     },
     {
-        title: "Fundacja “Dbam o Zdrowie”",
-        info: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
-        things: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
+        title: "Fundacja “Bez domu” NR 9",
+        info: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+        things: "ubrania, jedzenie, ciepłe koce",
         ID: 9
     },
 ];

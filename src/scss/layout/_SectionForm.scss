@@ -1,36 +1,54 @@
-.form {
-
-    .name-email {
-      display: flex;
-      width: 100%;
-      .label-text {
-        .input-text {
-          margin: $spacing-main*0.75;
-          padding: $spacing-main*0.1;
-          @include buttons;
-        }
-      }
-    }
-    .input-long-text {
+.form-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .article-title {
+    margin: $spacing-main 0;
+    font-size: $font-size*2;
+  }
+  .decorationIMG {
+    margin-bottom: $spacing-main*1.5;
+  }
+}
+.form-name-email {
+  display: flex;
+  width: 100%;
+  .label-text {
+    .input-text {
+      font-size: $font-size*0.85;
+      margin: $spacing-main*0.5 0 $spacing-main*0.5 0;
+      padding: $spacing-main*0.1;
       @include buttons;
     }
   }
+}
+.input-long-text {
+  @include buttons;
+}
+.form-msg-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   .submit-button {
     text-align: center;
     margin: $spacing-main;
     padding: $spacing-main*0.5;
     width: 25%;
+    @include buttons;
   }
+}
 .label-text {
   font-size: $font-size;
   font-family: $font-base;
   display: flex;
   flex-direction: column;
+  width: 100%;
   .input-text {
-    margin: $spacing-main*0.75;
-    padding: $spacing-main*0.1;
+    font-size: $font-size*0.85;
+    margin-top: $spacing-main*0.75;
     border-bottom: $border-main;
-  @include buttons;
+    @include buttons;
   }
 }
 .error {
@@ -39,3 +57,51 @@
   font-size: 0.8rem;
   margin: $spacing-main*0.5;
 }
+@media (min-width: 769px) and (max-width: 992px) {
+  .form-info {
+    .article-title {
+      margin: $spacing-main 0 $spacing-main;
+      font-size: $font-size*2;
+    }
+  }
+  .form {
+    text-align: center;
+
+    .form-name-email {
+      display: flex;
+      justify-content: space-around;
+
+      .label-text {
+        .input-text {
+          margin: $spacing-main;
+          @include buttons;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 150px) and (max-width: 768px) {
+  .form-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .article-title {
+      margin: $spacing-main*0.5;
+      font-size: $font-size*1.5;
+    }
+  }
+    .form {
+      text-align: center;
+      .form-name-email {
+        display: flex;
+        justify-content: space-around;
+
+        .label-text {
+          .input-text {
+            margin: 0;
+            @include buttons;
+          }
+        }
+      }
+    }
+  }

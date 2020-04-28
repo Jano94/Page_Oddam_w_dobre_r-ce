@@ -7,11 +7,11 @@ const SectionFirst = () => {
     return (
         <section className="container">
             <div className="row">
-                <div className="col-5">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <SectionIMG/>
                 </div>
 
-                <div className="col-7">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                 <HeaderNav/>
                 <SectionMenu/>
                 </div>

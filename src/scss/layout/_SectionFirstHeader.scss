@@ -5,6 +5,7 @@
   .button-login {
    @include buttons;
  .link-primary {
+   font-size: $font-size;
    @include links;
  }
   }
@@ -13,6 +14,7 @@
    border: 1px solid $color-login;
    margin: $spacing-main;
    .link-primary {
+     font-size: $font-size;
      @include links
    }
  }
@@ -22,11 +24,13 @@
   display: flex;
   justify-content: flex-end;
   box-sizing: border-box;
+  min-height: 52px;
   .nav-menu {
     margin: $spacing-main*0.2;
     color: $color-font;
     font-size: $font-size*1;
     padding: $spacing-main * 0.25;
+    text-align: center;
     list-style: none;
     box-sizing: border-box;
     &:hover {
@@ -34,10 +38,49 @@
       box-sizing: border-box;
     }
     .link-primary {
-      @include links
+      @include links;
     };
   }
   .nav-start {
     border: 1px solid $color-font;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .nav-primary {
+    margin: $spacing-main*0.5;
+    font-size: $font-size*0.8;
+    .button-register {
+      margin: $spacing-main*0.5;
+    }
+  }
+  .nav-secondary {
+    margin: $spacing-main*0.25;
+    min-height: 45px;
+    .nav-menu {
+      margin: $spacing-main*0.2;
+      font-size: $font-size*0.9;
+      padding: $spacing-main * 0.1;
+    }
+  }
+}
+
+@media (min-width: 150px) and (max-width: 768px) {
+  .nav-primary {
+    font-size: $font-size;
+    margin: 0;
+
+    .button-register {
+      margin: $spacing-main*0.25;
+    }
+  }
+  .nav-secondary {
+    min-height: 52px;
+    display: flex;
+    justify-content: center;
+    .nav-menu {
+      margin: $spacing-main*0.2;
+      font-size: $font-size;
+      padding: $spacing-main * 0.25;
+    }
   }
 }

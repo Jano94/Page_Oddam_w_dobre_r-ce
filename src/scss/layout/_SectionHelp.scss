@@ -1,6 +1,11 @@
 .section-help {
   text-align: center;
   height: 100%;
+  min-height: 695px;
+  .article-title {
+    font-size: $font-size*2;
+    margin: $spacing-main;
+  }
 }
 .decorationIMG {
   max-width: 100%;
@@ -21,7 +26,11 @@
 .article-head {
   display: flex;
   justify-content: center;
-  width: 40%;
+  width: 50%;
+  .info-goal {
+    font-size: $font-size*0.85;
+    min-height: 70px;
+  }
 }
 .slide-pagination {
   display: flex;
@@ -37,14 +46,120 @@
     }
   }
 }
-.help-box {
-  .help-title {
-    text-align: start;
-    font-size: $font-size * 1.25;
-    font-family: $font-base;
-    .help-info {
-      text-align: start;
+.article-content {
+  margin-top: $spacing-main*3;
+  .row {
+    margin-top: $spacing-main;
+    border-bottom: $border-main;
+  }
+}
+.help-title {
+  text-align: start;
+  font-size: $font-size * 1.25;
+  font-family: $font-base;
+  margin-bottom: $spacing-main;
+}
+.help-info {
+  text-align: start;
+  margin-bottom: $spacing-main;
+  font-size: $font-size*0.8;
+}
+.help-things {
+  text-align: end;
+  font-size: $font-size*0.8;
+  width: 50%;
+  float: right;
+}
+.slide-pagination {
+  min-height: 70px;
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .section-help {
+    min-height: 657px;
+    .article-title {
+      margin: $spacing-main 0 $spacing-main;
+      font-size: $font-size*2;
+    }
+  }
+  .article-buttons-change {
+    .art-button-change {
+      font-size: $font-size;
+      margin: $spacing-main*0.5;
+      padding: $spacing-main*0.5;
+      width: 100%;
+    }
+  }
+  .article-head {
+    width: 60%;
+    .info-goal {
+      font-size: $font-size;
+      margin: $spacing-main;
+    }
+  }
+  .slide-item {
+      margin: $spacing-main;
+      padding: $spacing-main *0.5;
+    }
+  .article-content {
+    margin-top: $spacing-main*1.5;
 
+    .help-title {
+      font-size: $font-size*1.15;
+      margin-bottom: $spacing-main*0.75;
+
+    }
+    .help-info {
+      font-size: $font-size*0.8;
+      margin-bottom: $spacing-main*0.75;
+    }
+    .help-things {
+      font-size: $font-size*0.8;
+    }
+  }
+}
+
+@media (min-width: 150px) and (max-width: 768px) {
+  .section-help {
+    .article-title {
+      margin: $spacing-main 0 $spacing-main;
+      font-size: $font-size*1.5;
+    }
+  }
+  .article-buttons-change {
+    .art-button-change {
+      font-size: $font-size;
+      margin: $spacing-main*0.25;
+      padding: $spacing-main*0.25;
+      width: 100%;
+    }
+  }
+  .article-head {
+    width: 80%;
+  }
+  .slide-pagination {
+
+    .slide-item {
+      margin: $spacing-main *0.5;
+      padding: $spacing-main *0.25;
+
+    }
+  }
+  .article-content {
+    margin-top: $spacing-main;
+    min-height: 290px;
+
+    .help-title {
+      font-size: $font-size;
+      margin-bottom: $spacing-main*0.5;
+    }
+
+    .help-info {
+      font-size: $font-size*0.7;
+      margin-bottom: $spacing-main*0.5;
+    }
+    .help-things {
+      text-align: end;
+      font-size: $font-size*0.7;
     }
   }
 }

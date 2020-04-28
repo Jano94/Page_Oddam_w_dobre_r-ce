@@ -1,20 +1,10 @@
-@mixin tablet {
-  @media screen and (min-width: #{$tablet}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (min-width: #{$desktop}) {
-    @content;
-  }
-}
 @mixin buttons {
   box-shadow: 0 0 0 transparent;
   border: 0 solid transparent;
   text-shadow: 0 0 0 transparent;
   color: $color-font-login;
   background: $color-main-article;
+  border-radius: 1%;
 }
 @mixin links {
   color: $color-font-login;
@@ -22,6 +12,7 @@
   text-decoration: none;
     &:hover {
       color: $color-font-login;
+      text-decoration: none;
     }
 }
 @mixin heading2 {
@@ -29,4 +20,8 @@
   font-size: $font-size*2;
   color: $color-font
 }
-
+@mixin headingTablet {
+  font-family: $font-base;
+  font-size: $font-size;
+  color: $color-font
+}

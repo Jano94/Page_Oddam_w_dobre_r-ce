@@ -1,40 +1,120 @@
  .mainIMG {
-   width: 100%;
-   height: 100%;
+   max-width: 100%;
   }
 .article-main {
-    margin-top: $spacing-main*5;
-    display: flex;
-    justify-content: center;
+  margin-top: $spacing-main*2;
+  display: flex;
+  justify-content: center;
 
-.article {
-  font-size: $font-size*2;
-  text-align: center;
+  .article {
+    font-size: $font-size*2;
+    text-align: center;
 
-  .article-text {
-    @include heading2;
-  }
+    .article-text {
+      @include heading2;
+    }
 
-  .decorationIMG {
-    margin-top: $spacing-main;
-  }
+    .decorationIMG {
+      margin-top: $spacing-main*0.5;
+    }
 
-  .article-buttons {
-    display: flex;
-    margin-top: $spacing-main*2;
+    .article-buttons {
+      display: flex;
 
-    .art-button {
-      font-family: $font-base;
-      font-size: $font-size*2;
-      margin: $spacing-main *1.7;
-      width: 50%;
-      @include buttons;
-      border: $border-main;
+      .art-button {
+        font-family: $font-base;
+        font-size: $font-size*2;
+        margin: $spacing-main;
+        width: 50%;
+        @include buttons;
+        border: $border-main;
 
-      .link-primary {
-        @include links;
+        .link-primary {
+          @include links;
+        }
       }
     }
   }
 }
-}
+  @media (min-width: 992px) and (max-width: 1140px) {
+    .article-main {
+      margin-top: $spacing-main;
+
+      .article {
+        font-size: $font-size;
+        text-align: center;
+
+        .article-text {
+          font-size: $font-size*2;
+        }
+        .decorationIMG {
+          margin-bottom: 0;
+        }
+
+        .article-buttons {
+          margin-top: $spacing-main*0.5;
+
+          .art-button {
+            font-family: $font-base;
+            font-size: $font-size;
+            margin: $spacing-main;
+            @include buttons;
+            border: $border-main;
+          }
+        }
+      }
+    }
+  }
+ @media (min-width: 577px) and (max-width: 992px) {
+   .article-main {
+     margin-top: $spacing-main*0.5;
+
+     .article {
+       font-size: $font-size*0.5;
+       text-align: center;
+
+       .article-text {
+         font-size: $font-size*1.5;
+       }
+       .decorationIMG {
+         margin-bottom: $spacing-main*0.15;
+       }
+       .article-buttons {
+         margin-top: $spacing-main*0.5;
+
+         .art-button {
+           font-size: $font-size;
+           margin: $spacing-main*0.5;
+         }
+       }
+     }
+   }
+ }
+ @media (min-width: 150px) and (max-width: 576px) {
+   .article-main {
+     margin-top: $spacing-main;
+
+     .article {
+       font-size: $font-size*0.75;
+       text-align: center;
+
+       .article-text {
+         font-size: $font-size*1.5;
+       }
+       .decorationIMG {
+         margin-bottom: $spacing-main*0.25;
+       }
+       .article-buttons {
+         margin-top: $spacing-main*0.75;
+
+         .art-button {
+           font-family: $font-base;
+           font-size: $font-size*1.25;
+           margin: $spacing-main*0.5;
+           @include buttons;
+           border: $border-main;
+         }
+       }
+     }
+   }
+ }
