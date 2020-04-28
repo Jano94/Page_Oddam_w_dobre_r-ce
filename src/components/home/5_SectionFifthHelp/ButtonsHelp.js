@@ -9,13 +9,14 @@ const ButtonsHelp = () => {
 
     const [currentSection, setCurrentSection] = useState(sections.foundation);
     const [chosenPage, setChosenPage] = useState(1);
-    const [itemsToShow, setItemsToShow] = useState(calculateItemsToShow(currentSection.items, chosenPage))
+    const [itemsToShow, setItemsToShow] = useState(calculateItemsToShow(currentSection.items, chosenPage));
 
     const handleClick = key => {
         setCurrentSection(sections[key]);
         setChosenPage(1);
         setItemsToShow(calculateItemsToShow(sections[key].items, 1));
     };
+
     const handlePaginate = page => {
         setChosenPage(page);
         setItemsToShow(calculateItemsToShow(currentSection.items, page));
@@ -33,6 +34,8 @@ const ButtonsHelp = () => {
             </h2>
 
             <div className="article-content">
+                <p>{currentSection.desc}</p>
+            <ul>
                 {itemsToShow.map(
                     ({title, info, things, ID}) => (<ButtonsHelpInfo
                         key={ID}
@@ -42,10 +45,11 @@ const ButtonsHelp = () => {
                     >
                     </ButtonsHelpInfo>))
                 }
+            </ul>
             </div>
             <Pagination itemsPerPage={itemsPerPage} items={currentSection.items} onPaginate={handlePaginate} />
         </>
-    );
+    )
 
 };
 export default ButtonsHelp;

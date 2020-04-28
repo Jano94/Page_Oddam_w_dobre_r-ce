@@ -1,4 +1,4 @@
-const FoundationArray= [
+const FoundationArray = [
     {
         title: "Fundacja “Dbam o Zdrowie” NR 1",
         info: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
