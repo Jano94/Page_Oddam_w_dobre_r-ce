@@ -34,7 +34,6 @@ const ButtonsHelp = () => {
             </h2>
 
             <div className="article-content">
-                <p>{currentSection.desc}</p>
             <ul>
                 {itemsToShow.map(
                     ({title, info, things, ID}) => (<ButtonsHelpInfo

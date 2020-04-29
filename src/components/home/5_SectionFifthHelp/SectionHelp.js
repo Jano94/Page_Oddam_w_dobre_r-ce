@@ -7,7 +7,7 @@ import ButtonsHelp from "./ButtonsHelp";
 const SectionHelp = () => {
     return (
         <>
-            <Element name="articleHelp" className="container section-help">
+            <Element name="articleHelp" className="section-help">
                 <h2 className="article-title"> Komu pomagamy?</h2>
                 <img src={decoration} alt="decoration" className="decorationIMG"/>
                 <ButtonsHelp/>

@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: 150px) and (max-width: 768px) {
+@media (min-width: 400px) and (max-width: 768px) {
   .nav-primary {
     font-size: $font-size;
     margin: 0;
@@ -81,6 +81,38 @@
       margin: $spacing-main*0.2;
       font-size: $font-size;
       padding: $spacing-main * 0.25;
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 399px) {
+  .nav-primary {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    .button-login {
+      .link-primary {;
+        font-size: $font-size*0.8;
+        margin: $spacing-main*0.1;
+      }
+    }
+    .button-register {
+      font-size: $font-size*0.8;
+      margin: $spacing-main*0.1;
+      .link-primary {;
+        font-size: $font-size*0.8;
+        margin: $spacing-main*0.1;
+      }
+    }
+  }
+  .nav-secondary {
+    min-height: 35px;
+    display: flex;
+    flex-direction: column;
+    .nav-menu {
+      margin: $spacing-main*0.1;
+      font-size: $font-size*0.8;
+      padding: $spacing-main * 0.1;
     }
   }
 }

@@ -3,7 +3,7 @@ import SectionColumns from "./SectionColumns";
 
 const SectionSecond = () => {
     return (
-        <section className="container article-yellow">
+        <section className="article-yellow">
             <div className="row">
                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                     <SectionColumns num={10} text={"ODDANYCH WORKÓW"}/>

@@ -12,7 +12,7 @@ const SectionWhatAbout = () => {
 
     return (
         <>
-            <Element name="articleWhatGoing" className="container section-what-going">
+            <Element name="articleWhatGoing" className="section-what-going">
                 <div>
                     <h2 className="article-title-wg"> Wystarczą 4 proste kroki </h2>
                     <img src={decoration} alt="decoration" className="decorationIMG"/>

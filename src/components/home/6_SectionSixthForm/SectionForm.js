@@ -7,7 +7,7 @@ const SectionForm = () => {
 
     return (
         <>
-            <Element name="articleForm" className="container section-contact">
+            <Element name="articleForm" className="section-contact">
                 <div className="row">
                     <div className="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12">
                         <img src={clothes} alt="clothes" className="mainIMG"/>

@@ -1,10 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import {NavLink} from "react-router-dom";
 import {Link} from 'react-scroll'
 
 const HeaderNav = () => {
-
-    const [login]= useState(" Zaloguj się");
   return (
       <>
           <article className="navs">

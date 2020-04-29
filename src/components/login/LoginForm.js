@@ -6,7 +6,7 @@ const LoginForm = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [errors, setErrors] = useState(initialErrors);
-    const [login , setLogin] = useState("");
+    const [setLogin] = useState("");
 
     const handleLogin = (e)=> {
         e.preventDefault();

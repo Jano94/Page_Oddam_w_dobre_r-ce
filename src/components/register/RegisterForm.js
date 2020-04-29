@@ -7,7 +7,7 @@ const RegisterForm = ( ) => {
     const [password, setPassword] = useState("");
     const [retPassword, setRetPassword]=useState("");
     const [errors, setErrors] = useState(initialErrors);
-    const [success, setSuccess] = useState("");
+    const [setSuccess] = useState("");
     const handleSubmit = (e) => {
         e.preventDefault();
         setErrors(initialErrors);
