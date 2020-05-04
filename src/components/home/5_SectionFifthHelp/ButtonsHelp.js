@@ -1,20 +1,20 @@
 import React, {useState} from "react";
 import { Pagination } from "./Pagination";
-import { sections } from './sections';
+import { informations } from './informations';
 import ButtonsHelpInfo from './ButtonsHelpInfo';
 
 const ButtonsHelp = () => {
     const itemsPerPage = 3;
     const calculateItemsToShow = (items, page) => items.slice(page * itemsPerPage - itemsPerPage, page * itemsPerPage)
 
-    const [currentSection, setCurrentSection] = useState(sections.foundation);
+    const [currentSection, setCurrentSection] = useState(informations.foundation);
     const [chosenPage, setChosenPage] = useState(1);
     const [itemsToShow, setItemsToShow] = useState(calculateItemsToShow(currentSection.items, chosenPage));
 
     const handleClick = key => {
-        setCurrentSection(sections[key]);
+        setCurrentSection(informations[key]);
         setChosenPage(1);
-        setItemsToShow(calculateItemsToShow(sections[key].items, 1));
+        setItemsToShow(calculateItemsToShow(informations[key].items, 1));
     };
 
     const handlePaginate = page => {
