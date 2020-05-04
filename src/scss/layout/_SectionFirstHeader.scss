@@ -1,7 +1,6 @@
 .nav-primary {
   display: flex;
   justify-content: flex-end;
-  margin: $spacing-main*2 $spacing-main $spacing-main;
   .button-login {
    @include buttons;
  .link-primary {
@@ -47,7 +46,6 @@
 }
 @media (min-width: 769px) and (max-width: 992px) {
   .nav-primary {
-    margin: $spacing-main*0.5;
     font-size: $font-size*0.8;
     .button-register {
       margin: $spacing-main*0.5;
@@ -66,8 +64,8 @@
 
 @media (min-width: 400px) and (max-width: 768px) {
   .nav-primary {
+    margin: $spacing-main;
     font-size: $font-size;
-    margin: 0;
 
     .button-register {
       margin: $spacing-main*0.25;
@@ -89,18 +87,18 @@
   .nav-primary {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: $spacing-main*0.5;
     .button-login {
       .link-primary {;
-        font-size: $font-size*0.8;
+        font-size: $font-size;
         margin: $spacing-main*0.1;
       }
     }
     .button-register {
-      font-size: $font-size*0.8;
+      font-size: $font-size;
       margin: $spacing-main*0.1;
       .link-primary {;
-        font-size: $font-size*0.8;
+        font-size: $font-size;
         margin: $spacing-main*0.1;
       }
     }
@@ -111,8 +109,8 @@
     flex-direction: column;
     .nav-menu {
       margin: $spacing-main*0.1;
-      font-size: $font-size*0.8;
-      padding: $spacing-main * 0.1;
+      font-size: $font-size;
+      padding: $spacing-main*0.5;
     }
   }
 }

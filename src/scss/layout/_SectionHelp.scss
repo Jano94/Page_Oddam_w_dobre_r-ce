@@ -26,7 +26,7 @@
 .article-head {
   display: flex;
   justify-content: center;
-  width: 50%;
+  padding: 0 $spacing-main*10;
   .info-goal {
     font-size: $font-size*0.85;
     min-height: 70px;
@@ -82,15 +82,15 @@
     }
   }
   .article-buttons-change {
+    padding: $spacing-main;
     .art-button-change {
       font-size: $font-size;
       margin: $spacing-main*0.5;
-      padding: $spacing-main*0.5;
       width: 100%;
     }
   }
   .article-head {
-    width: 60%;
+   text-align: center;
     .info-goal {
       font-size: $font-size;
       margin: $spacing-main;
@@ -118,48 +118,99 @@
   }
 }
 
-@media (min-width: 150px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 768px) {
   .section-help {
     .article-title {
       margin: $spacing-main 0 $spacing-main;
-      font-size: $font-size*1.5;
+      font-size: $font-size*2;
     }
   }
   .article-buttons-change {
+    padding: $spacing-main;
     .art-button-change {
       font-size: $font-size;
-      margin: $spacing-main*0.25;
-      padding: $spacing-main*0.25;
+      margin: $spacing-main*0.5;
       width: 100%;
     }
   }
   .article-head {
-    width: 80%;
-  }
-  .slide-pagination {
-
-    .slide-item {
-      margin: $spacing-main *0.5;
-      padding: $spacing-main *0.25;
-
+    text-align: center;
+    padding: 0 $spacing-main*5;
+    .info-goal {
+      font-size: $font-size;
+      margin: $spacing-main;
     }
+  }
+  .slide-item {
+    margin: $spacing-main;
+    padding: $spacing-main *0.5;
   }
   .article-content {
-    margin-top: $spacing-main;
-    min-height: 290px;
+    margin-top: $spacing-main*1.5;
 
     .help-title {
-      font-size: $font-size;
-      margin-bottom: $spacing-main*0.5;
-    }
+      padding-left: $spacing-main*3;
+      font-size: $font-size*1.15;
+      margin-bottom: $spacing-main*0.75;
 
+    }
     .help-info {
-      font-size: $font-size*0.7;
-      margin-bottom: $spacing-main*0.5;
+      padding-left: $spacing-main*3;
+      font-size: $font-size*0.8;
+      margin-bottom: $spacing-main*0.75;
     }
     .help-things {
-      text-align: end;
-      font-size: $font-size*0.7;
+      font-size: $font-size*0.8;
+      padding-right: $spacing-main*3;
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 499px) {
+  .section-help {
+    .article-title {
+      margin: $spacing-main 0 $spacing-main;
+      font-size: $font-size*2;
+    }
+  }
+  .article-buttons-change {
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-main;
+    .art-button-change {
+      font-size: $font-size;
+      margin: $spacing-main*0.12;
+      padding: $spacing-main*0.5;
+      width: 100%;
+    }
+  }
+  .article-head {
+    text-align: center;
+    padding: 0;
+    .info-goal {
+      font-size: $font-size;
+      margin: $spacing-main;
+    }
+  }
+  .slide-item {
+    margin: $spacing-main;
+    padding: $spacing-main *0.5;
+  }
+  .article-content {
+    margin-top: $spacing-main*1.5;
+
+    .help-title {
+      padding-left: $spacing-main*2;
+      font-size: $font-size;
+      margin-bottom: $spacing-main*0.75;
+    }
+    .help-info {
+      padding-left: $spacing-main*2;
+      font-size: $font-size*0.8;
+      margin-bottom: $spacing-main*0.75;
+    }
+    .help-things {
+      font-size: $font-size*0.8;
+      padding-right: $spacing-main;
     }
   }
 }

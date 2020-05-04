@@ -29,7 +29,7 @@ const ButtonsHelp = () => {
                 <button onClick={() => handleClick('organization')}  className="art-button-change">Organizacjom pozarządowym </button>
                 <button onClick={() => handleClick('local')} className="art-button-change">Lokalnym zbiórkom</button>
             </div>
-            <h2 className="container article-head">
+            <h2 className="article-head">
                 <p className="info-goal">{currentSection.desc}</p>
             </h2>
 

@@ -57,7 +57,7 @@
   font-size: 0.8rem;
   margin: $spacing-main*0.5;
 }
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 766px) and (max-width: 992px) {
   .form-info {
     .article-title {
       margin: $spacing-main 0 $spacing-main;
@@ -80,7 +80,10 @@
     }
   }
 }
-@media (min-width: 150px) and (max-width: 768px) {
+@media (min-width: 416px) and (max-width: 765px) {
+  .mainIMG {
+    display: none;
+  }
   .form-info {
     display: flex;
     flex-direction: column;
@@ -97,11 +100,60 @@
         justify-content: space-around;
 
         .label-text {
+          margin-top: $spacing-main*0.5;
           .input-text {
-            margin: 0;
-            @include buttons;
+            margin-top: $spacing-main*0.5;
+            text-align: center;
           }
         }
       }
     }
+  .form-msg-button {
+    .label-text {
+      margin-top: $spacing-main*0.5;
+      .input-text {
+        margin-top: $spacing-main*0.5;
+        text-align: center;
+      }
+    }
   }
+  }
+
+@media (min-width: 0px) and (max-width: 415px) {
+  .mainIMG {
+    display: none;
+  }
+  .form-info {
+    display: flex;
+    .article-title {
+      margin: $spacing-main*0.15;
+      font-size: $font-size*1.1;
+    }
+  }
+  .form {
+    text-align: center;
+    .form-name-email {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .label-text {
+        margin-top: $spacing-main*0.5;
+        .input-text {
+          text-align: center;
+          margin: 0;
+          margin-top: $spacing-main*0.5;
+          @include buttons;
+        }
+      }
+    }
+    .form-msg-button {
+      .label-text {
+        margin-top: $spacing-main*0.5;
+        .input-text {
+          margin-top: $spacing-main*0.5;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

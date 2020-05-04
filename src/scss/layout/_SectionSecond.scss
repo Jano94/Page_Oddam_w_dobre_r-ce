@@ -13,33 +13,52 @@
       margin-top: $spacing-main*1.5;
       font-size: $font-size*1.25;
       text-align: center;
-      letter-spacing: -0.36px;
+      letter-spacing: 0.36px;
     }
     .article-info {
       margin-top: $spacing-main;
-      padding: $spacing-main*1.25;
+      padding: $spacing-main*1.25 $spacing-main*0.1;
       font-size: $font-size;
-      letter-spacing: -0.32px;
       text-align: center;
     }
   }
- @media (min-width: 150px) and (max-width: 690px) {
+ @media (min-width: 400px) and (max-width: 775px) {
    .article-yellow {
-
      .article-num {
-       margin-top: $spacing-main*0.15;
+       margin-top: $spacing-main;
        font-size: $font-size*2.5;
      }
      .article-title {
        font-size: $font-size*1.5;
-       letter-spacing: -0.36px;
+       letter-spacing: 0.36px;
      }
 
      .article-info {
        text-align: center;
        padding: $spacing-main*0.25;
        font-size: $font-size;
-       letter-spacing: -0.32px;
+       padding: 0 $spacing-main*5;
+       margin-bottom: $spacing-main;
+     }
+   }
+ }
+ @media (min-width: 0px) and (max-width: 399px) {
+   .article-yellow {
+     .article-num {
+       margin-top: $spacing-main;
+       font-size: $font-size*2.5;
+     }
+     .article-title {
+       margin-top: $spacing-main;
+       font-size: $font-size*1.25;
+       letter-spacing: 0.36px;
+     }
+     .article-info {
+       text-align: center;
+       padding: $spacing-main*0.25;
+       font-size: $font-size*0.85;
+       padding: 0 $spacing-main*4;
+       margin-bottom: $spacing-main*0.5;
      }
    }
  }

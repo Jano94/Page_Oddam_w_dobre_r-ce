@@ -53,8 +53,8 @@ const LoginForm = () => {
                                value={password}
                                onChange={e => setPassword(e.target.value)}
                         />
-                    </label>
                         {errors.password && <p className="error"> {errors.password}</p>}
+                    </label>
                         <div className="btn-section">
                             <button className="btn btn-set">
                                 <NavLink className="link-primary" to="/register">Załóż konto</NavLink>

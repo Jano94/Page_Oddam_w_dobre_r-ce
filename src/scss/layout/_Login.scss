@@ -28,25 +28,45 @@
   }
 }
 .btn-section {
-  width: 175%;
-  display: flex;
-  justify-content: space-between;
   background-color: $color-main-article;
+  position: relative;
   .btn {
     margin: $spacing-main*1.5;
     @include buttons;
+    position: absolute;
+    bottom: -10rem;
+    right:7rem;
+    font-size: $font-size*1.15;
+    .link-primary {
+      @include links;
+      font-size: $font-size*1.15;
+    }
   }
     .btn-login {
       border: $border-main;
       padding: $spacing-main*0.75;
-    }
+      position: absolute;
+      bottom: -10rem;
+      left: 7rem;
 }
-.link-primary {
-  @include links;
 }
 @media (min-width: 150px) and (max-width: 576px) {
   .btn-section {
-    width: 125%;
+    display: flex;
+    flex-direction: column;
+      .btn {
+        bottom: -10rem;
+        right:2rem;
+        font-size: $font-size;
+        .link-primary {
+          font-size: $font-size;
+        }
+      }
+      .btn-login {
+        position: absolute;
+        bottom: -10rem;
+        left: 2rem;
+      }
   }
   .login-register-form {
     .label-text {
@@ -58,3 +78,4 @@
       }
   }
 }
+

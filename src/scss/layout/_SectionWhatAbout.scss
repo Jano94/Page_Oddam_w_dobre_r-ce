@@ -46,7 +46,7 @@
     }
   }
 }
-@media (min-width: 150px) and (max-width: 576px) {
+@media (min-width: 0px) and (max-width: 576px) {
   .section-what-going {
     .article-title-wg {
       margin: $spacing-main 0 $spacing-main;
@@ -67,10 +67,11 @@
     margin: $spacing-main*0.1;
     .article-title-col {
       margin-top: $spacing-main*0.1;
-      padding-bottom: $spacing-main*0.15;
+      padding: $spacing-main*0.7;
     }
     .article-info-wg {
       margin-top: $spacing-main*0.4;
+      padding: $spacing-main*0.7;
     }
   }
   .article-buttons {
